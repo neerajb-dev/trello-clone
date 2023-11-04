@@ -40,10 +40,7 @@ const Board = () => {
     const finishColIndex = columns[Number(destination.droppableId)];
 
     // Check if startColIndex and finishColIndex are defined
-    if (!startColIndex || !finishColIndex) {
-      // Handle the case when startColIndex or finishColIndex is undefined
-      return;
-    }
+    if (!startColIndex || !finishColIndex) return;
 
     const startCol: ColumnType = {
       id: startColIndex[0],
